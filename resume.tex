@@ -1,0 +1,39 @@
+% !TEX TS-program = xelatex
+% Replace the text in square brackets with your information.
+\documentclass{resume}
+\usepackage{tabularx}
+\geometry{a4paper, margin=1.5cm}
+\hypersetup{hidelinks}
+
+\begin{document}
+\pagenumbering{gobble}
+\renewcommand{\arraystretch}{1.2}
+
+\section*{\faGraduationCap\ Personal Information}
+\begin{tabularx}{\linewidth}{@{}lX lX@{}}
+    Name:  & [Your Name] & University: & [University] \\
+    Email: & [Email]     & Phone:      & [Phone] \\
+    % Website: & \href{https://example.com}{[Website]} & & \\
+\end{tabularx}
+
+\section{\faHome\ Education}
+\datedsubsection{\textbf{[University]}}{[City]}
+\datedsubsection{\textit{[Degree and Major]}}{[Start -- End]}
+\textbf{GPA:} [GPA] \qquad \textbf{Rank:} [Rank] \\
+\textbf{Relevant Coursework:} [Courses]
+
+\section{\faHeartO\ Honors \& Awards}
+\datedline{[Award or Scholarship]}{[Year]}
+
+\section{\faUsers\ Projects}
+\datedline{\textbf{[Project Title]}}{[Start -- End]}
+\textbf{Overview:} [Describe the project and its objective.] \\
+\textbf{Contributions:} [Describe your role and what you did.] \\
+\textbf{Results:} [Summarize the outcome or measurable impact.]
+
+\section{\faCogs\ Skills \& Interests}
+\textbf{Technical Skills:} [Languages, tools, or frameworks] \\
+\textbf{Language Proficiency:} [Languages and proficiency levels] \\
+\textbf{Interests:} [Research or professional interests]
+
+\end{document}

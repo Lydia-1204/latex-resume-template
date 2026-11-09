@@ -1,0 +1,47 @@
+% !TEX TS-program = xelatex
+% 替换方括号中的内容。如需使用自己的照片，请上传 photo.jpg。
+\documentclass{resume}
+\defaultfontfeatures[FandolSong-Regular]{Extension=.otf,SmallCapsFont=FandolHei-Regular}
+\usepackage[scheme=plain,fontset=fandol]{ctex}
+\usepackage{tabularx}
+\hypersetup{hidelinks}
+
+\begin{document}
+\pagenumbering{gobble}
+\renewcommand{\arraystretch}{1.2}
+
+\noindent
+\begin{minipage}[c]{0.82\textwidth}
+    \section*{\faGraduationCap\ 个人信息}
+    \begin{tabularx}{\linewidth}{@{}lX lX@{}}
+        姓名 & [姓名] & 院校 & [院校名称] \\
+        邮箱 & [邮箱] & 电话 & [电话号码] \\
+        % 主页 & \href{https://example.com}{[个人主页]} & & \\
+    \end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.12\textwidth}
+    \resumephoto[照片]{photo.jpg}
+\end{minipage}\par
+
+\section{\faHome\ 教育背景}
+\datedsubsection{\textbf{[院校名称]}}{[城市]}
+\datedsubsection{\textit{[学历与专业]}}{[起止时间]}
+\textbf{绩点：} [绩点] \qquad \textbf{排名：} [排名] \\
+\textbf{相关课程：} [课程名称]
+
+\section{\faHeartO\ 荣誉奖励}
+\datedline{[奖项或奖学金名称]}{[年份]}
+
+\section{\faUsers\ 科研与项目经历}
+\datedline{\textbf{[项目名称]}}{[起止时间]}
+\textbf{项目内容：} [简述项目背景与目标。] \\
+\textbf{采用方法：} [概述主要方法或技术。] \\
+\textbf{个人贡献：} [说明负责的工作。] \\
+\textbf{项目成果：} [概括交付成果或可量化的成效。]
+
+\section{\faCogs\ 技能与兴趣}
+\textbf{技术技能：} [编程语言、工具或框架] \\
+\textbf{语言能力：} [语种及熟练程度] \\
+\textbf{研究兴趣：} [研究方向或职业兴趣]
+
+\end{document}
